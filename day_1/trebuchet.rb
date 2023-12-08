@@ -30,13 +30,13 @@ class Trebuchet
   def first_digit(string)
     num = all_digits(string)[0]
 
-    return @words.index(num) ?  @words.index(num) : num
+    return @words.index(num) || num
   end
 
   def last_digit(string)
     num = all_digits(string)[-1]
 
-    return @words.index(num) ?  @words.index(num) : num
+    return @words.index(num) || num
   end
 end
 
